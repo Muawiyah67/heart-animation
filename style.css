@@ -1,0 +1,21 @@
+.heart {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px; /* Increased size */
+    height: 200px;
+    animation: pulse 1s ease-in-out infinite;
+    fill: #ff3366; /* Beautiful pinkish-red */
+    filter: drop-shadow(0 0 15px #ff6699); /* Glow effect */
+}
+
+@keyframes pulse {
+    0% { transform: translate(-50%, -50%) scale(1); }
+    50% { transform: translate(-50%, -50%) scale(1.4); }
+    100% { transform: translate(-50%, -50%) scale(1); }
+}
+
+body {
+    background-color: black; /* Dark theme for contrast */
+}
